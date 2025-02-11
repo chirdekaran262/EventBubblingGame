@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(146, 179, 109);
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(146, 179, 109);
+}
+
+#panel {
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+
+}
+
+#ptop {
+    display: flex;
+    padding: 0 20%;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(40, 97, 29);
+}
+
+.box,
+.timer,
+.hitval,
+.score {
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(11, 152, 53);
+    padding: 7px 15px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#pbtm {
+    display: flex;
+    gap: 5.1px;
+    flex-wrap: wrap;
+    padding: 12px;
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: black; */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 198, 141, 0.568);
+}
+
+.bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: green;
+    border-radius: 50%;
+    color: #fffcfc;
+    font-weight: 500;
+
+}
+
+.bubble:hover {
+    cursor: pointer;
+    background-color: rgb(14, 142, 5);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(40, 97, 29);
+    /* Matching the top panel color */
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    bottom: 0;
+}
+
+footer a {
+    color: #fffcfc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(180, 255, 180);
+}
