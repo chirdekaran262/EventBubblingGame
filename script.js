@@ -5,7 +5,7 @@ var hitNumber;
 function buubleForming() {
     let clutter = "";
 
-    for (var i = 1; i <= 114; i++) {
+    for (var i = 1; i <= 126; i++) {
         clutter += `<div class="bubble">${Math.floor(Math.random() * 10)}</div>`;
     }
     document.querySelector("#pbtm").innerHTML = clutter;
@@ -16,7 +16,7 @@ function newHit() {
     document.querySelector('.hitval').textContent = hitNumber;
 }
 
-var timer = 4;
+var timer = 60;
 function TimerSet() {
     var t = setInterval(function () {
         if (timer > 0) {
